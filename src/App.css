@@ -1,38 +1,114 @@
+body {
+  margin: 0; /* Remove default margin */
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-nav {
+  background-color: #000000;
+  padding: 10px; /* Add padding for better spacing */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column; /* Change to column for small screens */
+  align-items: center; /* Center items horizontally */
 }
 
-.App-link {
-  color: #61dafb;
+.nav-item {
+  color: #ffffff;
+  padding: 1rem 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Customize "CONTACT ME" style */
+.contact {
+  background-color: #ffffff; /* Change background color */
+  border-radius: 20px; /* Add border radius */
+  padding: 0.5rem 1.5rem; /* Adjust padding */
+  color: #000000;
+}
+
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+  .nav-container {
+    flex-direction: row; /* Change back to row for larger screens */
+    justify-content: flex-end; /* Align items to the end */
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-item {
+    margin: 0 10px; /* Adjust margin for spacing */
   }
+}
+
+.image_dashboard {
+  margin-top: 60px;
+  position: relative; /* Add relative positioning to the container */
+  overflow: hidden; /* Hide overflowing content */
+}
+
+.image-overlay {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.image-overlay2 {
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.name_text {
+  position: relative;
+  margin-top: 5rem;
+  left: 34%; /* Set the left position to 80% */
+  z-index: 1;
+}
+.name_text1 {
+  position: relative;
+  top: 30%; /* Adjust the vertical position as needed */
+  left: 68%; /* Set the left position to 80% */
+  z-index: 1;
+  font-size: 50px;
+}
+.name_text2 {
+  position: relative;
+  left: 56%; /* Set the left position to 80% */
+  font-size: smaller;
+  color: rgb(121, 119, 119);
+  font-weight: bold;
+  transform: translatey(-220%);
+}
+.image_dashboard img {
+  position: relative; /* Add relative positioning to the image */
+  z-index: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.insta {
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+}
+.linkdin {
+  margin: 0 10px;
+  height: 43px;
+  width: 43px;
+}
+.git {
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+}
+.second_container{
+  margin-top: 5rem;
+}
+.about_logo{
+  height: 40;
+  width: 40;
 }
