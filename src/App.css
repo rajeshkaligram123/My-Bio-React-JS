@@ -1,21 +1,25 @@
-body {
-  margin: 0; /* Remove default margin */
+.App {
+  margin: 0;
+  padding: 0;
 }
 
 .App {
   text-align: center;
+  height: auto;
+  width: auto;
+  padding-bottom: 10rem;
 }
 
 .App-nav {
   background-color: #000000;
-  padding: 10px; /* Add padding for better spacing */
+  padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .nav-container {
   display: flex;
-  flex-direction: column; /* Change to column for small screens */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column;
+  align-items: center;
 }
 
 .nav-item {
@@ -23,92 +27,297 @@ body {
   padding: 1rem 0.5rem;
 }
 
-/* Customize "CONTACT ME" style */
 .contact {
-  background-color: #ffffff; /* Change background color */
-  border-radius: 20px; /* Add border radius */
-  padding: 0.5rem 1.5rem; /* Adjust padding */
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
   color: #000000;
 }
 
-/* Responsive styles */
 @media screen and (min-width: 768px) {
   .nav-container {
-    flex-direction: row; /* Change back to row for larger screens */
-    justify-content: flex-end; /* Align items to the end */
+    flex-direction: row;
+    justify-content: flex-end;
   }
 
   .nav-item {
-    margin: 0 10px; /* Adjust margin for spacing */
+    margin: 0 10px;
   }
 }
 
 .image_dashboard {
+  position: relative;
   margin-top: 60px;
-  position: relative; /* Add relative positioning to the container */
-  overflow: hidden; /* Hide overflowing content */
+  height: 120vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.image-overlay {
-  position: absolute;
+.logo_image {
+  height: 7rem;
+  width: 15rem;
+  margin-left: 10rem;
+  margin-top: 2rem;
+}
+
+.first_container {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10rem;
+}
+
+.typewriter {
   top: 30%;
-  left: 15%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+  font-size: 50px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  animation: typing 3s steps(10, end) 1s forwards;
 }
-.image-overlay2 {
-  position: absolute;
-  top: 70%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10ch;
+  }
 }
+
+.second_container {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-left: 11.5rem;
+}
+
 .name_text {
-  position: relative;
   margin-top: 5rem;
-  left: 34%; /* Set the left position to 80% */
-  z-index: 1;
 }
+
 .name_text1 {
-  position: relative;
-  top: 30%; /* Adjust the vertical position as needed */
-  left: 68%; /* Set the left position to 80% */
-  z-index: 1;
+  top: 30%;
   font-size: 50px;
 }
+
 .name_text2 {
-  position: relative;
-  left: 56%; /* Set the left position to 80% */
   font-size: smaller;
   color: rgb(121, 119, 119);
   font-weight: bold;
-  transform: translatey(-220%);
+  transform: translateY(-220%);
 }
-.image_dashboard img {
-  position: relative; /* Add relative positioning to the image */
-  z-index: 0;
-  max-width: 100%;
-  max-height: 100%;
-}
+
 .insta {
   margin: 0 10px;
   height: 40px;
   width: 40px;
 }
+
 .linkdin {
   margin: 0 10px;
   height: 43px;
   width: 43px;
 }
+
 .git {
   margin: 0 10px;
   height: 40px;
   width: 40px;
 }
-.second_container{
+
+.third_container {
   margin-top: 5rem;
+  justify-content: center;
+  align-items: center;
 }
-.about_logo{
+
+.about_logo {
   height: 40;
   width: 40;
+}
+
+.logo3 {
+  margin-top: 5rem;
+}
+
+.about_me {
+  padding: 5rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .image_dashboard {
+    margin-top: 30px;
+    height: auto;
+    background-position: top;
+    padding-bottom: 3rem;
+  }
+
+  .logo_image {
+    height: 5rem;
+    width: 10rem;
+    margin: 1rem;
+  }
+
+  .first_container {
+    margin-left: 0;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .second_container {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .name_text {
+    margin-top: 1rem;
+  }
+
+  .name_text2 {
+    transform: translateY(0);
+  }
+
+  .insta,
+  .linkdin,
+  .git {
+    margin: 0 5px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .third_container {
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .about_me {
+    padding: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+.design_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.maintenace_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+.skill {
+  padding-top: 10rem;
+}
+.use_txt {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20rem;
+  padding-top: 5rem;
+}
+.flutter {
+  height: 6.5rem;
+  width: 8rem;
+}
+.logo_text {
+  color: #969292 !important;
+  font-weight: 600;
+}
+.use_txt {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.backimage_dashboard {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30vh; /* Adjust the height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+.black_div {
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh; /* Adjust the height as needed */
+  color: rgb(116, 113, 113);
+  font-size: 12px;
+}
+
+.black_div_text {
+  font-weight: 600;
+  position: relative; /* Required for pseudo-element positioning */
+  padding-bottom: 10px;
+}
+
+.black_div_text::after {
+  content: "";
+  position: absolute;
+  left: 50%; /* Position the line at the center of the text */
+  transform: translateX(-50%); /* Center the line under the text */
+  bottom: -5px; /* Adjust the spacing between text and line */
+  width: 10rem; /* Set the width of the line */
+  height: 4px; /* Set the height (thickness) of the line */
+  background-color: rgb(90, 88, 88); /* Line color */
+}
+.active-button {
+  color: white;
+}
+.active-button::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -5px;
+  width: 10rem;
+  height: 4px;
+  background-color: white; /* Line color for active button */
+}
+.web_img {
+  height: 30rem;
+  width: 40rem;
+}
+.app_img {
+  height: 40rem;
+  width: 20rem;
+}
+.web_app_img {
+  height: 22rem;
+  width: 12rem;
+}
+.web_app_img1 {
+  height: 22rem;
+  width: 26.5rem;
+}
+
+.all_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #000000;
+  height: 42rem;
+  align-items: center;
 }
