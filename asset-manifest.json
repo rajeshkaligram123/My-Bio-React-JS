@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/My-Bio-React-JS/static/css/main.3f37c3f2.css",
+    "main.js": "/My-Bio-React-JS/static/js/main.2858915c.js",
+    "static/js/787.28cb0dcd.chunk.js": "/My-Bio-React-JS/static/js/787.28cb0dcd.chunk.js",
+    "static/media/app3rd.jpg": "/My-Bio-React-JS/static/media/app3rd.5d723d59e0ac02a09a25.jpg",
+    "static/media/app1st.jpg": "/My-Bio-React-JS/static/media/app1st.e573086d8a8baf76f0b5.jpg",
+    "static/media/hilltop.png": "/My-Bio-React-JS/static/media/hilltop.62dcc6f9706c2c1f520c.png",
+    "static/media/app2nd.jpg": "/My-Bio-React-JS/static/media/app2nd.ec62244822494009a0c9.jpg",
+    "static/media/backimg.png": "/My-Bio-React-JS/static/media/backimg.53b4421697d90665ba96.png",
+    "static/media/kidkinder.png": "/My-Bio-React-JS/static/media/kidkinder.01f6bc96e69ca8baf93c.png",
+    "static/media/Hero.png": "/My-Bio-React-JS/static/media/Hero.bbf6b26fc2c7a01c2993.png",
+    "static/media/insta.png": "/My-Bio-React-JS/static/media/insta.3ad8822d875c8034d95b.png",
+    "static/media/Flutter.png": "/My-Bio-React-JS/static/media/Flutter.ca94ec2db8f81a675d8b.png",
+    "static/media/logo2.png": "/My-Bio-React-JS/static/media/logo2.c1526f34e90fb6184f16.png",
+    "index.html": "/My-Bio-React-JS/index.html",
+    "main.3f37c3f2.css.map": "/My-Bio-React-JS/static/css/main.3f37c3f2.css.map",
+    "main.2858915c.js.map": "/My-Bio-React-JS/static/js/main.2858915c.js.map",
+    "787.28cb0dcd.chunk.js.map": "/My-Bio-React-JS/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f37c3f2.css",
+    "static/js/main.2858915c.js"
+  ]
+}
