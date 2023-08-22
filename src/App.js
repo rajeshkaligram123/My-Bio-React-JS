@@ -57,7 +57,7 @@ function App() {
         <img src={logo} alt="logo" className="logo_image" />
         <div className="first_container">
           <h2 className="name_text">HI, I am</h2>
-          <h1 className="typewriter">RAJESH ROY</h1>
+          <h1 className="typewriter">RAAJESH ROY</h1>
           <p className="name_text2">Front-end Developer / React-Native</p>
         </div>
         <div className="second_container">
